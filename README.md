@@ -30,14 +30,14 @@ The project utilizes an Encoder-Decoder architecture to bridge computer vision a
 5.  **Auditory Output:** The generated text is converted to audio using a Text-to-Speech (TTS) engine.
 
 ### Process Flow Diagram
-![Process Flow Diagram](path/to/your/flow_chart_image.png)
+![Process Flow Diagram](_images/image.png)
 ---
 
 ## 🏗 System Architecture
 The application follows a strict client-server data flow to ensure low latency and high accuracy. The mobile client handles input/output, while the server handles heavy AI processing.
 
 ### Architecture Diagram
-![System Architecture Diagram](path/to/your/architecture_image.png)
+![System Architecture Diagram](_images/architecture.png)
 * **Client:** Flutter App (Camera, TTS).
 * **Protocol:** HTTP/HTTPS (GET/POST) via FastAPI.
 * **Server:** Python environment hosting PyTorch models (Inception V3 + LSTM).
@@ -97,3 +97,37 @@ pip install torch torchvision fastapi uvicorn pillow
 
 # Run the Server
 uvicorn main:app --reload
+```
+## 📱 2. Mobile App Setup
+
+```bash
+# Navigate to Flutter project
+cd ../FlutterUI/caption_app
+
+# Install dependencies
+flutter pub get
+
+# Run on emulator or physical device
+flutter run
+```
+## 🛣 Future Roadmap
+- **Optimization:** Hyperparameter tuning for better caption accuracy
+- **Multilingual Support:** Support for local and regional languages
+- **Edge Computing:** Deploy models using TFLite for offline inference
+- **Web Interface:** Accessibility-focused web dashboard
+
+---
+
+## 👥 Contributor
+
+**Project Guidance:**  
+Dr. Amit Ranjan  
+School of Computer Science, UPES  
+
+**Contributer:**
+- **Mayank Saini**
+  *Specialization:* AIML
+
+<!-- - **Nishant Singh** (ID: 500102042)  
+  *Specialization:* AIML NH -->
+
